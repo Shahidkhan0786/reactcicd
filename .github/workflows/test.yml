@@ -4,16 +4,9 @@ jobs:
     print-hello-world:
       runs-on: ubuntu-latest
       steps:
-          - run : echo "hello word"
-          - run : echo "this is step number 2"
-          - run : echo "this is step number 3"
-          - run : echo "this is step number 4"
+          - uses: actions/checkout@v2
+          - run: tree
+       
 
-    print-hello-world2:
-      runs-on: ubuntu-latest
-      steps:
-          - run : echo "hello word"
-          - run : echo "this is step number 2"
-          - run : echo "this is step number 3"
-          - run : echo "this is step number 4"      
+
        
