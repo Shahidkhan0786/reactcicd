@@ -9,6 +9,8 @@ jobs:
             with:
               node-version: '16.15.1'
           - run: node -v 
+          - name: install node_modules
+            run : npm install
           - name : build project
             run: npm run build
           - run: tree
