@@ -10,7 +10,7 @@ jobs:
               node-version: '16.15.1'
           - run: node -v 
           - name : build project
-            run: npm build
+            run: npm run build
           - run: tree
        
 
